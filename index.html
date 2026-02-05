@@ -3,12 +3,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 <style type="text/css">
-    @font-face { font-family: LastChristmas; src: url('LastChristmas.otf'); } 
-    @font-face { font-family: Apple; src: url('ITCBenguiatStdMediumCn.OTF'); }
+    @font-face { font-family: paradise; src: url('Birds of Paradise.ttf'); }
+    @font-face { font-family: kissing; src: url('Kissing Season.ttf'); }
     body {
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(255,255,255,0)), url('xmaspattern.png');
+    background-color:mistyrose;
     background-repeat: no-repeat;
     }
 
@@ -17,55 +16,45 @@
     }
 
     h1 {
-    font-family: LastChristmas
+        font-family: paradise;
     }
-} 
+    p {
+        margin: 0;
+        /* Add specific spacing if desired */
+        margin-bottom: 10px;
+    }
+
+    input[type="radio"] {
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    background-image: url("checked.png");
+    background-size: cover;
+
+}
+
+  input[type="radio"]:checked {
+  background-image: url("unchecked.png");
+}
 </style>
-<title>Trey Miller</title>
+<title>Be My Valentine??</title>
 </head>
 <body>
-  <h1 style="text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); color: darkgreen; text-align:center; font-size:500%;" >Trey's Christmas List!</h1>
+  <h1 style="text-shadow: 3px 3px 6px rgba(0, 0, 0, .3); color: pink; text-align:center; font-size:500%;" >To Anna Marie Martin...</h1>
   
-  <p style="text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); color: white; text-align:center; font-family: Apple; font-size:150%;">
-   Hello! I have built this web site to help you shop for me this holiday season! 
-   Here you will find a list of items unique to each person. Simply select who you are
-   in relation to me and you will be given your shopping list!
+  <p style="text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.35); color: white; text-align:center; font-family: kissing; font-size:400%;">
+   Will You Be My Valentine?
   </p>
+ <p style="text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.35); color: palevioletred; text-align:center; font-family: kissing; font-size:250%;">
+     <input type="radio" id="yes" name="choice" value="1">
+     <label for="yes"> Yes, of course!!</label>
 
-  <h2 style="font-size:200%; text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2); color: firebrick; text-align:center; font-family: Apple;">
-    What is your relation to the gift that keeps on giving?
-  </h2>
-  <p style="margin-bottom: 200px; text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); color: white; text-align:center; font-family: Apple;">
-    <label style="font-size: 150%; "><input type="radio" name="relation" value="mother.html"> Mother</label>
-    <label style="font-size: 150%;"><input type="radio" name="relation" value="father.html"> Father</label>
-      <label style="font-size: 150%;"><input type="radio" name="relation" value="girlfriend.html"> Girlfriend</label>
-  </p>
-   <div id="result"></div>
+     <input type="radio" id="no" name="choice" value="2">
+     <label for="no"> No, I hate your guts.</label>
+ </p>
 
-  <h1 style="text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6); color: rgba(117, 155, 115, 1); text-align:center; font-size:350%;">stocking stuffers</h1>
-  <ul style="text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); text-align:center; font-family: Apple; font-size:150%;">
-      <li style="color: white;">Vinyls</li>
-      <li style="color: firebrick;">Stickers</li>
-      <li style="color: white;">Golf Stuff</li>
-      <li style="color: firebrick;">Arc'teryx Beanie</li>
-      <li style="color: white;">Steam Gift Card</li>
-      <li style="color: firebrick;">Anime Figures / Merch</li>
-      <li style="color: white;">Board Games / Card Games</li>
-  </ul>
 
-  <script>
-  const radioName = "relation"; // use the 'name' attribute shared by your radios
-  
-  document.querySelectorAll(`input[name="${radioName}"]`).forEach(radio => {
-      radio.addEventListener("change", () => {
 
-        // Redirect to the chosen page
-        window.location.href = radio.value;
-      });
-    });
 
-  </script>
-  
-  
 </body>
 </html>
