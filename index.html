@@ -9,6 +9,12 @@
     body {
     background-color:mistyrose;
     background-repeat: no-repeat;
+    background: radial-gradient(
+    circle at center,
+    #FFFCFC 0%,
+    #FFF5F9 70%,
+    #FFEBF3 100%
+  );
     }
 
     ul {
@@ -17,11 +23,25 @@
 
     h1 {
         font-family: paradise;
+        background: linear-gradient(to bottom, #FF7D8B, #C4418D);
+
+        -webkit-background-clip: text;
+        background-clip: text;
+
+        -webkit-text-fill-color: transparent;
+        color: transparent
     }
     p {
         margin: 0;
-        /* Add specific spacing if desired */
         margin-bottom: 10px;
+
+         background: linear-gradient(to bottom, #CF5370, #FF94A4);
+
+        -webkit-background-clip: text;
+        background-clip: text;
+
+        -webkit-text-fill-color: transparent;
+        color: transparent
     }
 
     input[type="radio"] {
@@ -40,18 +60,19 @@
 <title>Be My Valentine??</title>
 </head>
 <body>
-  <h1 style="text-shadow: 3px 3px 6px rgba(0, 0, 0, .3); color: pink; text-align:center; font-size:500%;" >To Anna Marie Martin...</h1>
-  
-  <p style="text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.35); color: white; text-align:center; font-family: kissing; font-size:400%;">
-   Will You Be My Valentine?
+  <h1 style="color: pink; text-align:center; font-size:500%;" >To Anna Marie Martin...</h1>
+
+  <p style="color: white; text-align:center; font-family: kissing; font-size:400%;">
+      Will You Be My Valentine?
   </p>
- <p style="text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.35); color: palevioletred; text-align:center; font-family: kissing; font-size:250%;">
+ <h2 style="text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8); color: white; text-align:center; font-family: kissing; font-size:250%;">
      <input type="radio" id="yes" name="choice" value="1" autocomplete="off">
      <label for="yes"> Yes, of course!!</label>
 
      <input type="radio" id="no" name="choice" value="2" autocomplete="off">
      <label for="no"> No, I hate your guts.</label>
- </p>
+     <img src="calico critter.png" width="180" height="250">
+ </h2>
 
 
 
